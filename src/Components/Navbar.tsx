@@ -6,6 +6,7 @@ import { Menu, X, Phone, MessageCircle } from "lucide-react";
 const links = [
   { href: "#precios", label: "Precios & Promos" },
   { href: "#contacto", label: "Contacto" },
+  { href: "/Hola", label: "Cliente frecuente" },
 ];
 
 export default function Navbar() {
@@ -18,7 +19,7 @@ export default function Navbar() {
         <a href="#" className="flex items-center gap-3 group">
           <div className="relative">
             <img
-              src="/logo.svg"
+              src="/optimus-logo.png"
               alt="Optimus Prime"
               className="h-8 w-8 transition-transform group-hover:scale-110"
             />
@@ -48,7 +49,7 @@ export default function Navbar() {
           {/* Contact Buttons Desktop */}
           <div className="flex items-center gap-2 ml-2">
             <a
-              href="https://wa.me/525512345678"
+              href="https://wa.me/3525920118"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 border border-green-500/40 text-green-400 hover:bg-green-500/30 hover:border-green-500/60 transition-all duration-300 hover:scale-105"
@@ -59,7 +60,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="tel:+525512345678"
+              href="tel:+3525920118"
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/20 border border-blue-500/40 text-blue-400 hover:bg-blue-500/30 hover:border-blue-500/60 transition-all duration-300 hover:scale-105"
               title="Llamar"
             >
