@@ -49,4 +49,5 @@ export const promotions = [
 { day: 'Miércoles', discount: 20, detail: 'Paquete Premium', badge: 'Mid-Week' },
 { day: 'Jueves', discount: 12, detail: 'Encerado adicional', badge: 'Brillo Extra' },
 { day: 'Viernes', discount: 18, detail: 'Paquete Elite', badge: 'Weekend Warmup' },
+{ day: "Sábado", discount: 20, detail: "Pulido completo con 20% de descuento.", badge: "Fin de semana brillante", },
 ];

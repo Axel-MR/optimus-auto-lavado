@@ -2,35 +2,34 @@ import { products } from "@/lib/data";
 
 export default function Products() {
   return (
-    <section className="relative py-20 overflow-hidden" id="productos">
-      {/* Fondo decorativo */}
+    <section
+      id="productos"
+      className="relative py-24 bg-gray-50 text-gray-800 overflow-hidden"
+    >
+      {/* Fondo decorativo sutil */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-cyan-950/5 to-black"></div>
         <div
-          className="absolute inset-0 opacity-5"
+          className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(0, 255, 255, 0.3) 1px, transparent 0)`,
-            backgroundSize: "50px 50px",
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, rgba(0, 180, 255, 0.2) 1px, transparent 0)",
+            backgroundSize: "60px 60px",
           }}
         ></div>
       </div>
 
-      {/* Efectos de luz */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/4 right-0 w-96 h-96 bg-red-500/5 rounded-full blur-3xl"></div>
-
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-red-500/10 border border-cyan-500/30 backdrop-blur-sm mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-100 border border-cyan-200 text-cyan-700 mb-6">
             <svg
-              className="w-4 h-4 text-cyan-400"
+              className="w-4 h-4 text-cyan-600"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-            <span className="text-xs font-semibold tracking-wider text-cyan-400 uppercase">
+            <span className="text-xs font-semibold tracking-wider uppercase">
               Calidad Premium
             </span>
           </div>
@@ -39,15 +38,15 @@ export default function Products() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4"
             style={{ fontFamily: "var(--font-orbitron)" }}
           >
-            <span className="text-white">Productos </span>
-            <span className="bg-gradient-to-r from-cyan-400 via-cyan-300 to-red-400 bg-clip-text text-transparent">
+            <span className="text-gray-900">Productos </span>
+            <span className="bg-gradient-to-r from-cyan-600 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Profesionales
             </span>
           </h2>
 
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
             Usamos únicamente insumos de{" "}
-            <span className="text-cyan-400 font-semibold">
+            <span className="text-cyan-600 font-semibold">
               grado profesional
             </span>{" "}
             para garantizar resultados superiores y duraderos en cada servicio.
@@ -55,62 +54,49 @@ export default function Products() {
         </div>
 
         {/* Grid de productos */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((p, idx) => (
             <article
               key={p.name}
-              className="group relative"
+              className="group relative bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              {/* Card Background con gradiente sutil */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-500/5 via-black/40 to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              {/* Glow suave al hover */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              {/* Border glow effect */}
-              <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-br from-cyan-500/20 via-transparent to-red-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-              {/* Card Content */}
-              <div className="relative h-full bg-black/60 backdrop-blur-sm border border-white/10 rounded-2xl p-6 transition-all duration-300 group-hover:border-cyan-500/30 group-hover:translate-y-[-4px] group-hover:shadow-xl group-hover:shadow-cyan-500/10">
-                {/* Icon Container */}
-                <div className="mb-4 relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-red-500/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative w-16 h-16 rounded-xl bg-gradient-to-br from-cyan-500/10 to-red-500/10 border border-cyan-500/20 flex items-center justify-center group-hover:scale-110 group-hover:border-cyan-400/40 transition-all duration-300">
-                    <span className="text-4xl group-hover:scale-110 transition-transform duration-300">
-                      {p.icon}
-                    </span>
+              {/* Contenido */}
+              <div className="relative p-8 flex flex-col items-start">
+                <div className="mb-4">
+                  <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gradient-to-br from-cyan-100 to-blue-50 border border-cyan-200 group-hover:scale-110 transition-transform">
+                    <span className="text-3xl text-cyan-600">{p.icon}</span>
                   </div>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-cyan-700 transition-colors">
                   {p.name}
                 </h3>
 
-                {/* Description */}
-                <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
+                <p className="text-gray-500 text-sm leading-relaxed">
                   {p.desc}
                 </p>
 
-                {/* Decorative corner */}
-                <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-cyan-500/0 group-hover:bg-cyan-500/60 transition-all duration-500"></div>
-                <div className="absolute bottom-4 left-4 w-2 h-2 rounded-full bg-red-500/0 group-hover:bg-red-500/60 transition-all duration-500 delay-100"></div>
-
-                {/* Shine effect */}
-                <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                  <div className="absolute inset-[-100%] bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out"></div>
-                </div>
+                {/* Decoraciones sutiles */}
+                <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-cyan-200 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                <div className="absolute bottom-4 left-4 w-2 h-2 rounded-full bg-blue-200 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100"></div>
               </div>
             </article>
           ))}
         </div>
 
         {/* Footer con info adicional */}
-        <div className="mt-16 relative">
-          {/* Divisor decorativo */}
-          <div className="h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent mb-8"></div>
+        <div className="mt-20">
+          <div className="h-px bg-gradient-to-r from-transparent via-cyan-300/40 to-transparent mb-12"></div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
+                title: "Certificados",
+                desc: "Productos aprobados por fabricantes",
                 icon: (
                   <svg
                     className="w-6 h-6"
@@ -126,10 +112,10 @@ export default function Products() {
                     />
                   </svg>
                 ),
-                title: "Certificados",
-                desc: "Productos aprobados por fabricantes",
               },
               {
+                title: "Eco-friendly",
+                desc: "Fórmulas biodegradables",
                 icon: (
                   <svg
                     className="w-6 h-6"
@@ -145,10 +131,10 @@ export default function Products() {
                     />
                   </svg>
                 ),
-                title: "Eco-friendly",
-                desc: "Fórmulas biodegradables",
               },
               {
+                title: "Acción Rápida",
+                desc: "Resultados en menos tiempo",
                 icon: (
                   <svg
                     className="w-6 h-6"
@@ -164,10 +150,10 @@ export default function Products() {
                     />
                   </svg>
                 ),
-                title: "Acción Rápida",
-                desc: "Resultados en menos tiempo",
               },
               {
+                title: "Mejor Precio",
+                desc: "Calidad profesional accesible",
                 icon: (
                   <svg
                     className="w-6 h-6"
@@ -183,22 +169,20 @@ export default function Products() {
                     />
                   </svg>
                 ),
-                title: "Mejor Precio",
-                desc: "Calidad profesional accesible",
               },
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="flex items-start gap-4 p-4 rounded-xl bg-black/40 border border-white/5 hover:border-cyan-500/20 hover:bg-black/60 transition-all duration-300 group"
+                className="flex items-start gap-4 p-5 rounded-xl bg-white border border-gray-200 hover:border-cyan-300 hover:shadow-md transition-all group"
               >
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500/10 to-red-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-cyan-50 border border-cyan-200 flex items-center justify-center text-cyan-600 group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white text-sm mb-1 group-hover:text-cyan-400 transition-colors">
+                  <h4 className="font-semibold text-gray-800 text-sm mb-1 group-hover:text-cyan-700 transition-colors">
                     {item.title}
                   </h4>
-                  <p className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
+                  <p className="text-xs text-gray-500 group-hover:text-gray-700 transition-colors">
                     {item.desc}
                   </p>
                 </div>

@@ -6,20 +6,15 @@ import Contact from "../Components/contact";
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-y-5">
+    <div className="flex flex-col gap-y-1">
       <Hero />
-      <hr className=" border-2 border-amber-200" />
       <Packages />
-      <hr className=" border-2 border-amber-200" />
 
       <Products />
-      <hr className=" border-2 border-amber-200" />
 
       <PricingPromos />
-      <hr className=" border-2 border-amber-200" />
 
       <Contact />
-      <hr className=" border-2 border-amber-200" />
     </div>
   );
 }
