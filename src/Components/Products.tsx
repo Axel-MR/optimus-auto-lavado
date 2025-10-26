@@ -39,7 +39,7 @@ export default function Products() {
             style={{ fontFamily: "var(--font-orbitron)" }}
           >
             <span className="text-gray-900">Productos </span>
-            <span className="bg-gradient-to-r from-cyan-600 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-cyan-600 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Profesionales
             </span>
           </h2>
@@ -62,12 +62,12 @@ export default function Products() {
               style={{ animationDelay: `${idx * 100}ms` }}
             >
               {/* Glow suave al hover */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-cyan-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               {/* Contenido */}
               <div className="relative p-8 flex flex-col items-start">
                 <div className="mb-4">
-                  <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gradient-to-br from-cyan-100 to-blue-50 border border-cyan-200 group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-linear-to-br from-cyan-100 to-blue-50 border border-cyan-200 group-hover:scale-110 transition-transform">
                     <span className="text-3xl text-cyan-600">{p.icon}</span>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ export default function Products() {
 
         {/* Footer con info adicional */}
         <div className="mt-20">
-          <div className="h-px bg-gradient-to-r from-transparent via-cyan-300/40 to-transparent mb-12"></div>
+          <div className="h-px bg-linear-to-r from-transparent via-cyan-300/40 to-transparent mb-12"></div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -175,7 +175,7 @@ export default function Products() {
                 key={idx}
                 className="flex items-start gap-4 p-5 rounded-xl bg-white border border-gray-200 hover:border-cyan-300 hover:shadow-md transition-all group"
               >
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-cyan-50 border border-cyan-200 flex items-center justify-center text-cyan-600 group-hover:scale-110 transition-transform">
+                <div className="shrink-0 w-10 h-10 rounded-lg bg-cyan-50 border border-cyan-200 flex items-center justify-center text-cyan-600 group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
                 <div>

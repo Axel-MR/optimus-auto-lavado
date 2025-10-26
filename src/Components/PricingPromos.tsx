@@ -38,7 +38,7 @@ export default function PricingPromos() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-red-100 to-cyan-100 border border-cyan-200 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-linear-to-r from-red-100 to-cyan-100 border border-cyan-200 mb-6">
             <svg
               className="w-4 h-4 text-red-500"
               fill="currentColor"
@@ -60,7 +60,7 @@ export default function PricingPromos() {
             style={{ fontFamily: "var(--font-orbitron)" }}
           >
             <span className="text-gray-900">Precios & </span>
-            <span className="bg-gradient-to-r from-red-500 via-red-400 to-cyan-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-red-500 via-red-400 to-cyan-500 bg-clip-text text-transparent">
               Promociones
             </span>
           </h2>
@@ -96,7 +96,7 @@ export default function PricingPromos() {
                 <div
                   className={`relative rounded-2xl p-6 h-full border transition-all duration-300 ${
                     isToday
-                      ? "bg-gradient-to-b from-red-50 to-white border-red-300 shadow-md hover:shadow-lg"
+                      ? "bg-linear-to-b from-red-50 to-white border-red-300 shadow-md hover:shadow-lg"
                       : "bg-white border-gray-200 hover:border-red-300 hover:shadow-md"
                   }`}
                 >
@@ -138,7 +138,7 @@ export default function PricingPromos() {
                   <div
                     className={`h-px my-3 ${
                       isToday
-                        ? "bg-gradient-to-r from-red-400/40 to-cyan-400/40"
+                        ? "bg-linear-to-r from-red-400/40 to-cyan-400/40"
                         : "bg-gray-200"
                     }`}
                   ></div>

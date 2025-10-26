@@ -121,7 +121,7 @@ function Panel({
               className="relative h-40 bg-cover bg-center"
               style={{ backgroundImage: `url(${imgSrc})` }}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"></div>
             </div>
             <div className="p-4 text-sm text-white/80 bg-black/30">
               {description}

@@ -28,7 +28,7 @@ export default function Navbar() {
               <div className="absolute inset-0 bg-cyan-400/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <span
-              className="font-bold tracking-widest text-gray-900 text-sm md:text-base bg-gradient-to-r from-cyan-600 to-red-500 bg-clip-text text-transparent"
+              className="font-bold tracking-widest text-gray-900 text-sm md:text-base bg-linear-to-r from-cyan-600 to-red-500 bg-clip-text"
               style={{ fontFamily: "var(--font-orbitron)" }}
             >
               OPTIMUS PRIME
@@ -44,7 +44,7 @@ export default function Navbar() {
                 className="text-gray-700 hover:text-cyan-600 transition-colors relative group py-1 font-medium"
               >
                 {l.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-red-400 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-cyan-500 to-red-400 group-hover:w-full transition-all duration-300"></span>
               </a>
             ))}
 

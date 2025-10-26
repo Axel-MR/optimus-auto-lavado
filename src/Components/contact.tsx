@@ -22,7 +22,7 @@ export default function Contact() {
             style={{ fontFamily: "var(--font-orbitron)" }}
           >
             ¿Listo para{" "}
-            <span className="bg-gradient-to-r from-cyan-600 to-red-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-cyan-600 to-red-500 bg-clip-text text-transparent">
               transformar tu auto?
             </span>
           </h2>
@@ -138,7 +138,7 @@ export default function Contact() {
 
             <div className="space-y-5 mb-6">
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-cyan-600 mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-cyan-600 mt-1 shrink-0" />
                 <div>
                   <div className="font-medium text-gray-900">Dirección</div>
                   <p className="text-gray-500 text-sm">
@@ -148,7 +148,7 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-3">
-                <Clock className="w-5 h-5 text-cyan-600 mt-1 flex-shrink-0" />
+                <Clock className="w-5 h-5 text-cyan-600 mt-1 shrink-0" />
                 <div>
                   <div className="font-medium text-gray-900">Horarios</div>
                   <p className="text-gray-500 text-sm">
