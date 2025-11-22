@@ -1,16 +1,9 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import { Orbitron, Inter } from "next/font/google";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/footer";
 
-const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-
-export const metadata: Metadata = {
-  title: "Optimus Prime — Autolavado",
+export const metadata = {
+  title: "Essence Magazine",
   description:
-    "Lavado de coches con estilo retro-futurista. Paquetes, productos, promociones y contacto.",
+    "A curated magazine exploring design, culture, and thoughtful living",
 };
 
 export default function RootLayout({
@@ -19,11 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${orbitron.variable} ${inter.variable}`}>
-      <body className="min-h-screen flex flex-col bg-grid-radial bg-[length:100%_100%] text-white">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+    <html lang="en">
+      <body className="bg-background text-foreground antialiased">
+        {children}
       </body>
     </html>
   );
