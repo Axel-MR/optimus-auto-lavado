@@ -24,11 +24,19 @@ export default function Navbar() {
             href="/"
             className="font-serif text-xl font-medium tracking-tight md:text-2xl"
           >
-            ESSENCE
+            Optimus Prime AutoLavado
           </a>
 
           <nav className="hidden md:flex items-center space-x-8">
-            {["Home", "Features", "Culture", "Style", "About"].map((item) => (
+            {[
+              "Home",
+              "Productos",
+              "Nosotros",
+              "Planes",
+              "Agenda",
+              "Promos",
+              "Contacto",
+            ].map((item) => (
               <a key={item} href="#" className="nav-link">
                 {item}
               </a>
@@ -72,7 +80,16 @@ export default function Navbar() {
               <line x1="6" y1="18" x2="18" y2="6" />
             </svg>
           </button>
-          {["Home", "Features", "Culture", "Style", "About"].map((item) => (
+          {[
+            "Home",
+            "Features",
+            "Productos",
+            "Nosotros",
+            "Planes",
+            "Agenda",
+            "Promos",
+            "Contacto",
+          ].map((item) => (
             <a
               key={item}
               href="#"
