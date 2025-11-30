@@ -14,6 +14,7 @@ export default function PricingPromos() {
       "Jueves",
       "Viernes",
       "Sábado",
+      "Domingo",
     ];
     setCurrentDay(days[new Date().getDay()]);
   }, []);
@@ -21,7 +22,7 @@ export default function PricingPromos() {
   return (
     <section
       id="precios"
-      className="relative py-24 bg-gray-50 text-gray-800 overflow-hidden"
+      className="relative py-12 bg-gray-50 text-gray-800 overflow-hidden"
     >
       {/* Fondo decorativo sutil */}
       <div className="absolute inset-0">
@@ -75,7 +76,7 @@ export default function PricingPromos() {
         </div>
 
         {/* Grid de promociones */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4">
           {promotions.map((d, idx) => {
             const isToday = d.day === currentDay;
             return (
@@ -204,22 +205,6 @@ export default function PricingPromos() {
               />
             </svg>
             <span>Sin letra chica</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <svg
-              className="w-5 h-5 text-red-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 4v16m8-8H4"
-              />
-            </svg>
-            <span>Acumulables con otros descuentos</span>
           </div>
         </div>
       </div>
