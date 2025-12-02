@@ -23,7 +23,7 @@ export default function Hero() {
           >
             Ver Servicios
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://i.pinimg.com/736x/85/6e/49/856e490f8788e3420f5d47022c9f5efe.jpg"
               width="16"
               height="16"
               stroke="currentColor"
@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="animate-scale-in relative">
           <div className="overflow-hidden rounded-lg">
             <img
-              src="https://images.unsplash.com/photo-1607860108855-0f18b72d2d1d?auto=format&fit=crop&w=1000&q=80"
+              src="https://i.pinimg.com/736x/85/6e/49/856e490f8788e3420f5d47022c9f5efe.jpg"
               alt="Coche brillante después del lavado"
               className="h-[500px] w-full object-cover transition-transform duration-700 hover:scale-105"
             />
