@@ -4,7 +4,8 @@ price: 149,
 features: [
 'Espuma activa',
 'Llantas y rines',
-'Secado sin rayas'
+'Secado sin rayas',
+"crfdcxf"
 ],
 popular: false,
 },
@@ -15,7 +16,8 @@ price: 299,
 features: [
 'Aspirado profundo',
 'Limpieza de plásticos y tapetes',
-'Cera sintética 30 días'
+'Cera sintética 30 días',
+"edfcerfc"
 ],
 popular: true,
 },
@@ -26,7 +28,8 @@ price: 549,
 features: [
 'Descontaminación rápida',
 'Cera carnauba premium',
-'Protección UV 60 días'
+'Protección UV 60 días',
+"edfcerfc  "
 ],
 popular: false,
 },
@@ -44,7 +47,7 @@ export const products = [
 
 
 export const promotions = [
-{ day: 'Lunes', discount: 15, detail: 'Sedanes y hatchback', badge: 'Inicia la semana' },
+{ day: 'Lunes', discount: 100, detail: 'Sedanes y hatchback', badge: 'Inicia la semana' },
 { day: 'Martes', discount: 10, detail: 'SUVs y pickups', badge: 'Día SUV' },
 { day: 'Miércoles', discount: 20, detail: 'Paquete Premium', badge: 'Mid-Week' },
 { day: 'Jueves', discount: 12, detail: 'Encerado adicional', badge: 'Brillo Extra' },

@@ -25,7 +25,7 @@ export default function Hero() {
           >
             Ver Servicios
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://i.pinimg.com/736x/85/6e/49/856e490f8788e3420f5d47022c9f5efe.jpg"
               width="16"
               height="16"
               stroke="currentColor"
