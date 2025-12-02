@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
@@ -20,12 +21,12 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <a
+          <Link
             href="/"
             className="font-serif text-xl font-medium tracking-tight md:text-2xl"
           >
             Optimus Prime AutoLavado
-          </a>
+          </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
             {[
@@ -37,9 +38,9 @@ export default function Navbar() {
               "Promos",
               "Contacto",
             ].map((item) => (
-              <a key={item} href="#" className="nav-link">
+              <Link key={item} href="#" className="nav-link">
                 {item}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -90,14 +91,14 @@ export default function Navbar() {
             "Promos",
             "Contacto",
           ].map((item) => (
-            <a
+            <Link
               key={item}
               href="#"
               className="text-2xl font-medium"
               onClick={() => setOpen(false)}
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
       )}

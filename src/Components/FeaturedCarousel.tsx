@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 
 export default function FeaturedCarousel() {
@@ -9,21 +10,21 @@ export default function FeaturedCarousel() {
       title: "Brillo Extremo en Cada Detalle",
       desc: "Nuestro servicio estrella que combina limpieza profunda con cera protectora para dejar tu vehículo como nuevo.",
       author: "Equipo Optimus",
-      img: "https://images.unsplash.com/photo-1607860108855-0f18b72d2d1d?auto=format&fit=crop&w=1170&q=80",
+      img: "https://i.pinimg.com/1200x/1a/d9/4e/1ad94e0dffaf26a049d7226d6c82ad07.jpg",
     },
     {
       category: "Detallado Interior",
       title: "Cuidado Total por Dentro y por Fuera",
       desc: "Eliminamos suciedad, olores y bacterias del interior de tu auto con productos biodegradables de alta calidad.",
       author: "Equipo Optimus",
-      img: "https://images.unsplash.com/photo-1607860070880-7eae1b84b73a?auto=format&fit=crop&w=1170&q=80",
+      img: "https://i.pinimg.com/1200x/50/a7/6a/50a76a797350a05cad303953d2a8184b.jpg",
     },
     {
       category: "Lavado Ecológico",
       title: "Ahorra Agua, Cuida el Planeta",
       desc: "Innovación ecológica que permite lavar tu vehículo utilizando menos de 2 litros de agua por servicio.",
       author: "Optimus EcoWash",
-      img: "https://images.unsplash.com/photo-1597007066438-8cf442cc5b7b?auto=format&fit=crop&w=1170&q=80",
+      img: "https://i.pinimg.com/1200x/ba/43/f3/ba43f3600157ee7fcd9413853e2d815c.jpg",
     },
   ];
 
@@ -114,9 +115,11 @@ export default function FeaturedCarousel() {
                 className="min-w-full grid md:grid-cols-2 items-center gap-8"
               >
                 <div className="overflow-hidden rounded-lg">
-                  <img
+                  <Image
                     src={slide.img}
                     alt={slide.title}
+                    width={500}
+                    height={500}
                     className="h-[400px] md:h-[500px] w-full object-cover"
                   />
                 </div>

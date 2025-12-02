@@ -1,6 +1,4 @@
 "use client";
-
-import ArticlesGrid from "@/Components/ArticlesGrid";
 import FeaturedCarousel from "@/Components/FeaturedCarousel";
 import Hero from "@/Components/Hero";
 import Navbar from "@/Components/Navbar";

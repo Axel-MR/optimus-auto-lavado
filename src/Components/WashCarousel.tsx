@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 interface Wash {
   id: number;
@@ -86,7 +87,9 @@ export default function WashCarousel() {
               >
                 {/* Imagen con overlay gradiente mejorado */}
                 <div className="relative w-full h-full">
-                  <img
+                  <Image
+                    width={500}
+                    height={500}
                     src={washes[index].image}
                     alt={washes[index].title}
                     className="w-full h-full object-cover"
@@ -177,7 +180,8 @@ export default function WashCarousel() {
                 }`}
                 whileHover={{ y: -4 }}
               >
-                <img
+                <Image
+                  fill
                   src={wash.image}
                   alt={wash.title}
                   className="w-full h-full object-cover"

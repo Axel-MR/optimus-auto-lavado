@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-32 pb-20">
@@ -40,8 +42,12 @@ export default function Hero() {
         {/* Imagen del coche */}
         <div className="animate-scale-in relative">
           <div className="overflow-hidden rounded-lg">
-            <img
-              src="https://images.unsplash.com/photo-1607860108855-0f18b72d2d1d?auto=format&fit=crop&w=1000&q=80"
+            <Image
+              width={500}
+              height={500}
+              src={
+                "https://i.pinimg.com/736x/85/6e/49/856e490f8788e3420f5d47022c9f5efe.jpg"
+              }
               alt="Coche brillante después del lavado"
               className="h-[500px] w-full object-cover transition-transform duration-700 hover:scale-105"
             />
