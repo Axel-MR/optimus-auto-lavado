@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Essence Magazine",
+  title: "Omtimus Autolavado",
   description:
     "A curated magazine exploring design, culture, and thoughtful living",
 };
