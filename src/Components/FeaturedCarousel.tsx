@@ -49,7 +49,7 @@ export default function FeaturedCarousel() {
   return (
     <section
       className="py-20"
-      id="servicios"
+      id="Nosotros"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >

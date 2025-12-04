@@ -21,7 +21,7 @@ export default function PricingPromos() {
 
   return (
     <section
-      id="precios"
+      id="Promos"
       className="relative py-12 bg-gray-50 text-gray-800 overflow-hidden"
     >
       {/* Fondo decorativo sutil */}

@@ -3,7 +3,7 @@ import { products } from "@/lib/data";
 export default function Products() {
   return (
     <section
-      id="productos"
+      id="Productos"
       className="relative py-24 bg-gray-50 text-gray-800 overflow-hidden"
     >
       {/* Fondo decorativo sutil */}

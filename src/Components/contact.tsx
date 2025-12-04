@@ -8,7 +8,7 @@ export default function Contact() {
 
   return (
     <section
-      id="contacto"
+      id="Contacto"
       className="relative py-24 bg-gray-50 overflow-hidden"
     >
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-300/20 rounded-full blur-3xl"></div>
@@ -37,7 +37,7 @@ export default function Contact() {
           {/* Columna izquierda - Contacto Directo */}
           <div className="space-y-6">
             {/* Tarjeta de contacto */}
-            <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 transition-all hover:shadow-lg">
+            <div className="bg-white rounded-2xl space-y-6 shadow-md border border-gray-100 p-5 transition-all hover:shadow-lg">
               <h3 className="font-bold text-2xl mb-6 text-gray-900">
                 Contacto Directo
               </h3>
@@ -54,7 +54,7 @@ export default function Contact() {
                 <div className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                   <MessageCircle className="w-7 h-7" />
                 </div>
-                <div className="flex-1 text-left">
+                <div className="flex-1 text-left ">
                   <div className="font-bold text-lg text-gray-900">
                     WhatsApp
                   </div>
@@ -142,7 +142,8 @@ export default function Contact() {
                 <div>
                   <div className="font-medium text-gray-900">Dirección</div>
                   <p className="text-gray-500 text-sm">
-                    Av. Cybertron 1984, CDMX
+                    C. Vía Láctea 1375, Cd del Sol, 59310 La Piedad de Cabadas,
+                    Mich.
                   </p>
                 </div>
               </div>
@@ -152,7 +153,7 @@ export default function Contact() {
                 <div>
                   <div className="font-medium text-gray-900">Horarios</div>
                   <p className="text-gray-500 text-sm">
-                    Lunes a Domingo: 9:00 AM - 7:00 PM
+                    Lunes a Sabado: 9:00 AM - 6:00 PM Domingo: 9:00 AM - 3:00 PM
                   </p>
                 </div>
               </div>
@@ -161,20 +162,15 @@ export default function Contact() {
             {/* Mapa */}
             <div className="rounded-xl overflow-hidden border border-gray-200">
               <iframe
-                className="w-full h-64"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.02219787711067!2d-102.02552770107337!3d20.375875833239736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c1f535b247fcd%3A0x70ba2087475e34ec!2sOptimus%20Prime%20Car%20Studio!5e0!3m2!1ses!2smx!4v1764890839443!5m2!1ses!2smx"
+                width="600"
+                height="450"
                 loading="lazy"
-                src="https://www.google.com/maps?q=Ciudad%20de%20M%C3%A9xico&output=embed"
-                title="Ubicación en mapa"
-              />
-            </div>
-
-            {/* Nota */}
-            <div className="mt-5 p-4 rounded-xl bg-cyan-50 border border-cyan-200">
-              <p className="text-sm text-gray-700">
-                💡 <span className="font-semibold">¿Primera vez?</span> Te
-                ofrecemos una evaluación gratuita para diseñar el mejor plan
-                para tu vehículo.
-              </p>
+                className="w-full h-64 md:h-80 lg:h-96 border-0"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación de Optimus Prime AutoLavado"
+              ></iframe>
             </div>
           </div>
         </div>

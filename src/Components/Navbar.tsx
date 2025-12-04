@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseOutline } from "react-icons/io5";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -37,49 +39,30 @@ export default function Navbar() {
               "Agenda",
               "Promos",
               "Contacto",
-            ].map((item) => (
-              <Link key={item} href="#" className="nav-link">
+            ].map((item, key) => (
+              <Link key={key} href={`#${item}`} className="nav-link">
                 {item}
               </Link>
             ))}
           </nav>
 
-          <button className="p-2 md:hidden" onClick={() => setOpen(true)}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              stroke="currentColor"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          </button>
+          {!open && (
+            <button className="p-2 md:hidden" onClick={() => setOpen(true)}>
+              <GiHamburgerMenu />
+            </button>
+          )}
         </div>
       </header>
 
       {/* Mobile Menu */}
       {open && (
-        <div className="fixed inset-0 z-40 bg-white flex flex-col items-center justify-center space-y-8 p-8 transition-transform">
+        <div className="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center space-y-8 p-8">
           <button
-            className="absolute top-8 right-8"
+            className="absolute top-8 right-8 p-2"
             onClick={() => setOpen(false)}
             aria-label="Close menu"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              stroke="currentColor"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <line x1="6" y1="6" x2="18" y2="18" />
-              <line x1="6" y1="18" x2="18" y2="6" />
-            </svg>
+            <IoCloseOutline className="w-10 h-10" />
           </button>
           {[
             "Home",
@@ -90,9 +73,9 @@ export default function Navbar() {
             "Agenda",
             "Promos",
             "Contacto",
-          ].map((item) => (
+          ].map((item, key) => (
             <Link
-              key={item}
+              key={key}
               href="#"
               className="text-2xl font-medium"
               onClick={() => setOpen(false)}

@@ -5,6 +5,7 @@ import { useState } from "react";
 export default function BookingForm() {
   const [formData, setFormData] = useState({
     name: "",
+    servicio: "",
     email: "",
     time: "",
   });
@@ -25,7 +26,7 @@ export default function BookingForm() {
     const phoneNumber = "4437253612"; // <--- cambia a tu número con código país
     const message = `Hola 👋, soy ${formData.name}. 
     Quisiera agendar un lavado a las ${formData.time}. 
-    Mi correo es: ${formData.email}`;
+    Mi correo es: ${formData.email}, me gustaria reservar el servicio de: ${formData.servicio}. Gracias.`;
 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -38,10 +39,7 @@ export default function BookingForm() {
   };
 
   return (
-    <section
-      className=" text-primary-foreground py-20 text-center"
-      id="contacto"
-    >
+    <section className=" text-primary-foreground py-20 text-center" id="Agenda">
       <div className="max-w-2xl mx-auto">
         <span className="uppercase tracking-widest text-xs opacity-80 mb-3 inline-block">
           Agenda tu servicio
@@ -70,7 +68,21 @@ export default function BookingForm() {
               required
               className="bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50 rounded-md border border-primary-foreground/20 px-4 py-3 focus:ring-2 focus:ring-primary-foreground/30 focus:outline-none"
             />
-
+            <select
+              name="servicio"
+              value={formData.servicio}
+              onChange={handleChange}
+              required
+              className="bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50 rounded-md border border-primary-foreground/20 px-4 py-3 focus:ring-2 focus:ring-primary-foreground/30 focus:outline-none"
+            >
+              <option value="" disabled>
+                Selecciona un servicio
+              </option>
+              <option value="Lavado Exterior">Lavado Exterior</option>
+              <option value="Lavado Completo">Lavado Completo</option>
+              <option value="Detalle Interior">Detalle Interior</option>
+              <option value="Pulido y Encerado">Pulido y Encerado</option>
+            </select>
             <input
               type="email"
               name="email"

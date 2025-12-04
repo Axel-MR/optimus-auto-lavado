@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Navbar />
       <main className="px-8">
-        <Hero />
+        <Hero key="home" />
         <Products />
         <FeaturedCarousel />
         <Packages />

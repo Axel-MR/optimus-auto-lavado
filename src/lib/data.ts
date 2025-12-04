@@ -1,5 +1,7 @@
 export const packages = [
 {
+name: 'Basic',
+desc: 'Lavado exterior rápido con espuma activa y secado sin rayas.',
 price: 149,
 features: [
 'Espuma activa',

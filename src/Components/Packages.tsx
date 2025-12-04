@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import { packages } from "../lib/data";
 
 export default function Packages() {
-  const [billing, setBilling] = useState<"monthly" | "annual">("monthly");
-
   return (
-    <section className="relative py-24 bg-gray-50 text-gray-900 overflow-hidden">
+    <section
+      id="Planes"
+      className="relative py-24 bg-gray-50 text-gray-900 overflow-hidden"
+    >
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -17,29 +17,6 @@ export default function Packages() {
           <p className="text-gray-500 max-w-2xl mx-auto mb-6">
             MarketingZen features that will help your company scale faster
           </p>
-
-          {/* Toggle */}
-          <div className="flex items-center justify-center gap-4">
-            <span className="text-sm font-medium text-gray-500">
-              Bill Monthly
-            </span>
-            <div
-              onClick={() =>
-                setBilling(billing === "monthly" ? "annual" : "monthly")
-              }
-              className="relative w-16 h-8 bg-gray-200 rounded-full cursor-pointer transition-colors duration-300"
-            >
-              <div
-                className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full shadow-md transition-all duration-300 ${
-                  billing === "annual" ? "translate-x-8" : ""
-                }`}
-              />
-            </div>
-            <span className="text-sm font-medium text-gray-500">
-              Bill Annually{" "}
-              <span className="text-green-500 font-semibold">(10% off)</span>
-            </span>
-          </div>
         </div>
 
         {/* Cards */}
@@ -76,10 +53,7 @@ export default function Packages() {
                 {/* Price */}
                 <div className="mb-8">
                   <span className="text-5xl font-bold text-gray-900">
-                    $
-                    {billing === "annual"
-                      ? (plan.price * 0.9).toLocaleString()
-                      : plan.price.toLocaleString()}
+                    ${plan.price.toLocaleString()}
                   </span>
                   <span className="text-gray-500 text-lg font-medium">/mo</span>
                 </div>
