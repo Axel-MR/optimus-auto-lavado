@@ -52,7 +52,7 @@ export default function PricingPromos() {
               />
             </svg>
             <span className="text-xs font-semibold tracking-wider text-red-500 uppercase">
-              Ofertas Especiales
+              Holas descuentos diarios
             </span>
           </div>
 
