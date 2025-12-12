@@ -1,0 +1,53 @@
+{
+    "name":  "backend",
+    "version":  "1.0.0",
+    "main":  "index.js",
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "description":  "",
+    "dependencies":  {
+                         "@nestjs/common":  "^11.1.9",
+                         "@nestjs/config":  "^4.0.2",
+                         "@nestjs/core":  "^11.1.9",
+                         "@nestjs/passport":  "^11.0.5",
+                         "@nestjs/platform-express":  "^11.1.9",
+                         "bcryptjs":  "^3.0.3",
+                         "class-transformer":  "^0.5.1",
+                         "class-validator":  "^0.14.3",
+                         "firebase-admin":  "^13.6.0",
+                         "jsonwebtoken":  "^9.0.3",
+                         "passport":  "^0.7.0",
+                         "passport-jwt":  "^4.0.1",
+                         "reflect-metadata":  "^0.2.2",
+                         "rxjs":  "^7.8.2",
+                         "uuid":  "^13.0.0"
+                     },
+    "devDependencies":  {
+                            "@nestjs/cli":  "^11.0.14",
+                            "@nestjs/schematics":  "^11.0.9",
+                            "@nestjs/testing":  "^11.1.9",
+                            "@types/bcryptjs":  "^2.4.6",
+                            "@types/jsonwebtoken":  "^9.0.10",
+                            "@types/node":  "^25.0.1",
+                            "@types/passport-jwt":  "^4.0.1",
+                            "@types/uuid":  "^10.0.0",
+                            "eslint":  "^9.39.1",
+                            "eslint-config-prettier":  "^10.1.8",
+                            "eslint-plugin-import":  "^2.32.0",
+                            "eslint-plugin-prettier":  "^5.5.4",
+                            "prettier":  "^3.7.4",
+                            "ts-node":  "^10.9.2",
+                            "tsconfig-paths":  "^4.2.0",
+                            "typescript":  "^5.9.3"
+                        },
+    "scripts":  {
+                    "start":  "node dist/main.js",
+                    "start:dev":  "nest start --watch",
+                    "build":  "nest build",
+                    "lint":  "eslint \u0027src/**/*.ts\u0027",
+                    "format":  "prettier --write \u0027src/**/*.ts\u0027"
+                }
+}

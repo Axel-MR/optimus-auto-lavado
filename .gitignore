@@ -10,6 +10,11 @@
 !.yarn/releases
 !.yarn/versions
 
+# Backend dependencies
+backend/node_modules/
+backend/dist/
+backend/.nest/
+
 # testing
 /coverage
 
@@ -23,6 +28,7 @@
 # misc
 .DS_Store
 *.pem
+Thumbs.db
 
 # debug
 npm-debug.log*
@@ -32,6 +38,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+backend/.env
 
 # vercel
 .vercel
@@ -39,3 +46,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
